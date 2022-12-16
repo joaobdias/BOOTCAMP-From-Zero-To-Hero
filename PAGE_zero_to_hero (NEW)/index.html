@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bom de Boca</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <div id="logoMenu">
+            <h1 id="logo">Bom<span>de</span>Boca</h1>
+            <ul id="headMenu">
+                <li><a class="headerMenu" href="#destacSection">Inicio</a></li>
+                <li><a class="headerMenu" href="#presentationSection">Sobre</a></li>
+                <li><a class="headerMenu" href="#formSection">Solicitar</a></li>
+            </ul>
+        </div>
+        <input id="searchBar" type="search" placeholder="Pesquisar" size="24" maxlength="24">
+
+    </header>
+
+    <main>
+        <section id="destacSection">
+            <div id="destacImg">
+                <img id="imgDestac"
+                    src="https://s2.glbimg.com/1FLHGlHMYjcoylHCvcc93k9JsSU=/0x0:1800x1400/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2020/t/2/dpV1FkS4WByGHfml8S1w/pudim.jpg"
+                    alt="">
+                <h3 class="titleText" id="imgDestacTxt">Receita de Pudim da Creusa</h3>
+            </div>
+            <div id="destacText">
+                <p class="normalText"> A mais nova receita de pudim para aquela ocasião especial! Caso queira essa
+                    ou outras receitas, preencha o formulário abaixo com suas informações e descrição!</p>
+                <ul id="recipeDestac">
+                    <li><a class="recipeList normalText">1 - Preencha o formulário</a></li><br>
+                    <li><a class="recipeList normalText">2 - Descreva o que precisa</a></li><br>
+                    <li><a class="recipeList normalText">3 - Receba na hora!</a></li>
+                </ul>
+                <a href="#formSection" type="button" id="buttonRecipe" class="normalText">Peça sua receita!</a>
+            </div>
+
+        </section>
+
+        <section class="sections" id="presentationSection">
+            <div id="aboutText">
+                <h2 class="subpageTitle titleText">Sobre nós</h2>
+                <p class="normalText" id="presentationTxt">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+
+            <img id="presentationImg" src="https://www.academiaassai.com.br/sites/default/files/cozinheiro_texto.jpg"
+                alt="">
+        </section>
+
+        <section class="sections" id="formSection">
+            <h2 class="subpageTitle titleText">Solicite sua receita</h2>
+            <p id="formRecipeDescription" class="normalText">Digite abaixo como deverá ser a receita, quais ingredientes
+                deseja usar e para
+                qual ocasião. Após isso,
+                será enviado ao email a receita ideal.</p>
+            <div id="formRecipeFather">
+                <form id="formRecipe">
+                    <div class="formItem">
+                        <label for="nameForm" class="normalText">Nome</label><br>
+                        <input type="text" id="nameForm" class="formIn" name="nameForm" placeholder="Fulano da Silva"
+                            size="48" maxlength="48" required><br>
+                    </div>
+                    <div class="formItem">
+                        <label for="emailForm" class="normalText">E-mail</label><br>
+                        <input type="text" id="emailForm" class="formIn" name="emailForm" placeholder="fulano@gmail.com"
+                            size="48" maxlength="48" required><br>
+                    </div>
+                    <div class="formItem">
+                        <label for="descriptionForm" class="normalText">Descrição da receita</label><br>
+
+                        <textarea id="descriptionForm" name="descriptionForm"
+                            placeholder="Gostaria de solicitar uma receita usando maçâ para a festa de aniversário do meu filho."
+                            maxlength="294" required></textarea>
+                        <br>
+                    </div>
+
+                    <input type="submit" value="Solicitar" class="normalText" id="reqButton">
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <footer id="footerSection">
+        <p class="footerText">© 2022 BomdeBoca</p>
+        <p class="footerText">Todos os direitos reservados</p>
+    </footer>
+
+</body>
+
+</html>

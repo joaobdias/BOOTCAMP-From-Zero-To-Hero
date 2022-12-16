@@ -1,0 +1,298 @@
+/* ------------------ Basics ------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --footer-color: #F0DA6F;
+    --head-color: #FFEC8F;
+    --border-color: #6E663D;
+    --text-color: #807647;
+    --buttom-color: #E6D37E;
+    --buttom-press-color: #B3A462;
+
+    --font: 1rem;
+    --font-logo: 1.45rem;
+}
+
+textarea {
+    resize: none;
+    width: 360px;
+    height: 100px;
+}
+
+.normalText {
+    font: 700 var(--font) 'DM Sans', sans-serif;    
+    color: var(--text-color);
+}
+
+.footerText {
+    font: 500 var(--font) 'DM Sans', sans-serif;
+    color: var(--text-color);
+}
+
+.titleText {
+    font: 900 var(--font-logo) 'Poppins', sans-serif;    
+    color: var(--text-color);
+}
+
+.headerMenu {
+    font: 700 var(--font) 'Poppins', sans-serif;    
+    color: var(--text-color);
+}
+
+/* ------------------ Header ------------------ */
+
+#header {
+    background-color: var(--head-color);
+    position: fixed;
+    width: 100%;
+    border-bottom: 2px solid var(--border-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+    padding:1rem;
+}
+
+#logoMenu{
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+}
+
+#logo {
+    font: 900 var(--font-logo) 'Pacifico', sans-serif;
+    color: var(--text-color);
+}
+
+
+#headMenu{
+    display: flex;
+    gap: 4rem;
+    padding-top: 0.65rem;
+    font: 700 var(--font) 'DM Sans', sans-serif;    
+    color: var(--text-color);
+}
+
+#searchBar{
+    border-radius: 20px;
+    padding: 0.5rem;
+    margin-right: 2rem;
+    text-align: center;
+    font: 400 var(--font) 'DM Sans', sans-serif;
+}
+
+
+/* ------------------ BODY ------------------ */
+
+main {
+    padding: 5rem;
+}
+
+.sections {
+    margin-top: 8rem;
+    
+}
+
+.subpageTitle{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+/* ------------- Recipes ------------- */
+
+#destacSection{
+    text-align: center;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left:5rem;
+    margin-right: 5rem;
+}
+
+#destacText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#imgDestac { 
+    width:600px;
+    height:400px;
+    object-fit: cover;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+}
+
+.recipeList {
+    display:flex;
+}
+
+#buttonRecipe {
+    padding:1rem;
+    background-color: var(--buttom-color);
+    border-radius: 15px;
+    border: 2px solid var(--border-color);
+}
+
+#buttonRecipe:hover {
+    background-color: var(--buttom-press-color); 
+}
+
+/* ------------- Presentation ------------- */
+
+#presentationSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right:4rem;
+    margin-left:4rem;
+}
+
+#aboutText {
+
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#presentationImg {
+    max-width:600px;
+    max-height:400px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.8);
+    margin-left: 3rem;
+    border-radius: 20px;
+}
+
+#presentationTxt {
+    max-width:400px;
+    max-height:400px;
+}
+
+/* ------------- Form ------------- */
+#formSection {
+    margin-bottom: 2.5rem;
+}
+
+#formRecipeFather{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#formRecipe{
+    padding:4rem;
+    text-align: center;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.8);
+}
+
+#formRecipeDescription{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.formItem{
+    padding-bottom: 2.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+#reqButton {
+    padding: 0.5rem;
+    background-color: var(--buttom-color);
+    border-radius: 10px;
+}
+
+#reqButton:hover {
+    background-color: var(--buttom-press-color); 
+}
+
+.formIn {
+    text-align: center;
+}
+
+#descriptionForm {
+    padding: 0.5rem;
+}
+
+/* ------------------ FOOTER ------------------ */
+
+footer{
+    background-color: var(--footer-color);
+}
+
+#footerSection{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+    border-top: 2px solid var(--border-color);
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+
+/* ------------------ PROPORTION ------------------ */
+@media (max-width: 1280px) {
+    
+    #destacSection{
+        flex-direction: column;
+        margin-left:4rem;
+        margin-right: 4rem;
+    }
+    #imgDestac { 
+        width:500px;
+        height:300px;
+    }
+
+    #destacImg {
+        margin-bottom: 3rem;
+    }
+
+    #recipeDestac {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    #presentationSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #aboutText {
+        margin-bottom: 3rem;
+    }
+
+}  
+
+@media (max-width: 800px) {
+    
+    #imgDestac { 
+        width:400px;
+        height:200px;
+    }
+
+    #headMenu{
+        gap: 2rem;
+    }
+
+    #logoMenu{
+        gap: 4rem;
+    }
+
+    #presentationImg {
+        max-width:500px;
+        max-height:400px;
+    }
+}   
